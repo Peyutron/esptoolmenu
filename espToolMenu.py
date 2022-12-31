@@ -90,7 +90,7 @@ def accion3():
 def accion4():
     ruta = input('escribe la ruta: ')
     print('Quemando binario ESP8266...')
-    os.system(direccion + 'esptool.py --chip esp8266 --port /dev/ttyUSB0 write_flash 0x0 '+ ruta)
+    os.system(direccion + 'esptool.py --chip esp8266 --port ' + set_port + ' /dev/ttyUSB0 write_flash 0x0 '+ ruta)
     #os.system(direccion + 'esptool.py --chip esp8266 --port /dev/ttyUSB0 erase_flash')
     print('Quemado finalizado...')
 
@@ -114,8 +114,4 @@ if __name__ == '__main__':
         else: menu_com(connected)
     else: 
         menu_principal()
-#
-#
-##print("Connected COM ports: " + str(connected))
-#
 
