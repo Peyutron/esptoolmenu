@@ -1,3 +1,8 @@
+#manera fácil de programar y borrar ESP32 y ESP8266 en Linux
+#Fuentes:
+#https://www.codigopiton.com/como-hacer-un-menu-de-usuario-en-python/
+#https://stackoverflow.com/questions/12090503/listing-available-com-ports-with-python
+
 import os   #importa libreria para acceder al sistema de archivos
 import serial.tools.list_ports
 
